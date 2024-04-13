@@ -1,0 +1,97 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("./assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+div.container {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+div.cps {
+    width: 100%;
+}
+
+img.logo-cps {
+    width: 12%;
+}
+
+div.boas-vindas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  font-size: 85px;
+  text-align: center;
+}
+
+button.btn-acessar {
+    width: 180px;
+    height: 50px;
+    background-color: #B20000;
+    border: 0px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+button.btn-acessar:hover {
+    border: solid 1px white;
+}
+
+@media screen and (max-width: 1110px) {
+    h1 {
+        font-size: 70px;
+    }
+    img.logo-cps {
+        width: 16%;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    h1 {
+        font-size: 60px;
+    }
+    img.logo-cps {
+        width: 18%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    h1 {
+        font-size: 50px;
+        margin: 5%;
+    }
+    img.logo-cps {
+        width: 26%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    img.logo-cps {
+        width: 35%;
+    }
+}
