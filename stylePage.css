@@ -197,9 +197,13 @@ img.slideshow {
 }
 
 @media screen and (max-width: 680px) {
+    div.conteudo {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     img.etec {
         margin-top: 30px;
-        width: 100%;
+        width: 120%;
     }    
     p.txt {
         font-size: 25px;
