@@ -195,3 +195,35 @@ img.slideshow {
     border-radius: 10px;
     margin-bottom: 30px;
 }
+
+@media screen and (max-width: 680px) {
+    img.etec {
+        margin-top: 30px;
+        width: 80%;
+    }    
+    p.txt {
+        font-size: 25px;
+    }
+    div.conteudo {
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+    p.paragrafo {
+        font-size: 18px;
+    }
+    div.cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 580px) {
+    img.etec {
+        margin-top: 30px;
+        width: 70%;
+    }    
+    p.txt {
+        font-size: 25px;
+    }
+
+}
