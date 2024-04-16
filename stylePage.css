@@ -203,7 +203,7 @@ img.slideshow {
     }
     img.etec {
         margin-top: 30px;
-        width: 120%;
+        width: 150%;
     }    
     p.txt {
         font-size: 25px;
@@ -216,6 +216,9 @@ img.slideshow {
         justify-content: center;
         align-items: center;
     }
+    img.card-img {
+        width: 90%;
+    }
     iframe {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -225,6 +228,7 @@ img.slideshow {
         border-radius: 10px;
         margin-bottom: 30px;
         width: 100%;
+        height: auto;
     }
     p.footer {
         font-size: 14px;
