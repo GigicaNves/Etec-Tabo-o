@@ -27,7 +27,7 @@ div.navbar {
 }
 
 img.navbar {
-    width: 6%;
+    width: 7%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -199,14 +199,10 @@ img.slideshow {
 @media screen and (max-width: 680px) {
     img.etec {
         margin-top: 30px;
-        width: 80%;
+        width: 100%;
     }    
     p.txt {
         font-size: 25px;
-    }
-    div.conteudo {
-        margin-left: 50%;
-        margin-right: 50%;
     }
     p.paragrafo {
         font-size: 18px;
@@ -215,6 +211,26 @@ img.slideshow {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    iframe {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    img.slideshow {
+        border-radius: 10px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    p.footer {
+        font-size: 14px;
+        margin: 10px;
+    }
+    img.img {
+        width: 10%;
+    }
+    img.navbar {
+        width: 10%;
     }
 }
 @media screen and (max-width: 580px) {
