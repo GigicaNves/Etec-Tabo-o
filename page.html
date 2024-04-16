@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.0/html2pdf.bundle.min.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -17,23 +21,54 @@
 
         <div class="conteudo">
 
-            <p class="txt">Etec de Taboão da Serra</p>
-                <img class="etec" src="./assets/etec_taboao.png" alt="">
+            <p class="txt-etec">ETEC DE TABOÃO DA SERRA</p>
 
-                    <p class="txt">Já passou da hora de você conhecer a nossa Etec</p>
-                    <div id="clock"></div>
+            <img class="etec" src="./assets/etec_taboao.png" alt="">
 
-                    <p class="paragrafo">
-                        A Etec de Taboão da Serra iniciou suas atividades em fevereiro de 2018, como classe descentralizada da Etec de Embu. Os meses iniciais da escola contou com um coordenador de classe descentralizada e dois coordenadores de curso. O quadro de professores foi montado a partir dos pedidos de ampliação de carga horária de professores da sede e de outras unidades do Centro Paula Souza. <br><br>
-                        
-     Em 21 de março de 2018, o então Governador do Estado de São Paulo GERALDO ALCKMIN, cria a Etec de Taboão da Serra através do DECRETO N° 63.293. À vista disso, o coordenador de classe descentralizada é designado Diretor de Escola Técnica, o CPS disponibiliza dois empregos públicos (diretor de serviço e assistente administrativo), dois projetos HAE (diretor de serviço e parcerias escola-empresa) e maior quantidade de HAE – Hora Aula Atividade Específicas – para as funções de Coordenação Pedagógica, Orientação Educacional e Coordenação de Laboratório. Novos processos são implantados e a escola impulsionada. <br>
+            <p class="txt">Já passou da hora de você conhecer a nossa Etec</p>
 
+            <div id="clock"></div>
 
-     <br> O prédio que abriga a escola foi construído a partir da parceria com a Secretaria Estadual de Educação. Sendo que a Fundação para o Desenvolvimento da Educação (FDE) ficou responsável pela obra. Atualmente, a Etec conta com uma infraestrutura que dispõe de 6 salas administrativas (secretaria, almoxarifado, núcleo pedagógico, coordenação de cursos e relações institucionais, diretoria de serviços, direção), 7 salas de aula, 4 laboratórios equipados com computadores ou notebooks, sala de professores, biblioteca, quadra, cozinha, refeitório, copa, pátio, depósito de limpeza, vestiário para funcionários, banheiros em todos os andares, portaria e estacionamento. Apesar da obra ainda não estar concluída, a escola opera aproveitando o melhor que a infraestrutura atual pode oferecer. <br>
+            <p class="paragrafo">
+                A Etec de Taboão da Serra iniciou suas atividades em fevereiro de 2018, como classe descentralizada da Etec de Embu. Os meses iniciais da escola contou com um coordenador de classe descentralizada e dois coordenadores de curso. O quadro de professores foi montado a partir dos pedidos de ampliação de carga horária de professores da sede e de outras unidades do Centro Paula Souza. <br><br>             
+                Em 21 de março de 2018, o então Governador do Estado de São Paulo GERALDO ALCKMIN, cria a Etec de Taboão da Serra através do DECRETO N° 63.293. À vista disso, o coordenador de classe descentralizada é designado Diretor de Escola Técnica, o CPS disponibiliza dois empregos públicos (diretor de serviço e assistente administrativo), dois projetos HAE (diretor de serviço e parcerias escola-empresa) e maior quantidade de HAE – Hora Aula Atividade Específicas – para as funções de Coordenação Pedagógica, Orientação Educacional e Coordenação de Laboratório. Novos processos são implantados e a escola impulsionada. <br>
+                <br> O prédio que abriga a escola foi construído a partir da parceria com a Secretaria Estadual de Educação. Sendo que a Fundação para o Desenvolvimento da Educação (FDE) ficou responsável pela obra. Atualmente, a Etec conta com uma infraestrutura que dispõe de 6 salas administrativas (secretaria, almoxarifado, núcleo pedagógico, coordenação de cursos e relações institucionais, diretoria de serviços, direção), 7 salas de aula, 4 laboratórios equipados com computadores ou notebooks, sala de professores, biblioteca, quadra, cozinha, refeitório, copa, pátio, depósito de limpeza, vestiário para funcionários, banheiros em todos os andares, portaria e estacionamento. Apesar da obra ainda não estar concluída, a escola opera aproveitando o melhor que a infraestrutura atual pode oferecer. <br>
+                <br> A Etec é muito bem acolhida na região. Os pais e alunos apoiam as ações da escola e acreditam na proposta do ensino técnico. Além disso, contamos com a colaboração essencial da Prefeitura Municipal com as demandas da instituição.
+            </p>
 
-     <br> A Etec é muito bem acolhida na região. Os pais e alunos apoiam as ações da escola e acreditam na proposta do ensino técnico. Além disso, contamos com a colaboração essencial da Prefeitura Municipal com as demandas da instituição.
-                    </p>
+            <p class="txt" id="mudar">Nossos cursos</p>
+            <button id="descobrir" class="btn-descobrir" onclick="descobrir()">Descubra</button>
+
+            <div class="cards">
+                <div class="card">
+                    <img class="card-img" src="./assets/ETIM.png" alt="ETIM DS">
+                    <h1 class="card-txt">TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS INTEGRADO AO ENSINO MÉDIO</h1>
+                    <p class="card-p">Nesta modalidade, o aluno cursará as disciplinas do Ensino Médio, concomitantemente com a formação técnica em Desenvolvimento de Sistemas.</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/ETIM-noturno-img.png" alt="ETIM NOTURNO - II">
+                    <h1 class="card-txt">TÉCNICO EM INFORMÁTICA PARA INTERNET INTEGRADO AO ENSINO MÉDIO</h1>
+                    <p class="card-p">Nesta modalidade, o aluno cursará as disciplinas do Ensino Médio, concomitantemente com a formação técnica em Informática para Internet.</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/TEC.png" alt="TECNICO DS">
+                    <h1 class="card-txt">TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS</h1>
+                    <p class="card-p">Nesta modalidade, o aluno cursará a formação técnica em Desenvolvimento de Sistemas.</p>
+                </div>
+    
+            </div>
+
+            <p class="txt">Nossa localização</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9800403907984!2d-46.76569912501938!3d-23.60504876319798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5439738500e1%3A0x18e3ca266464ea67!2sEscola%20T%C3%A9cnica%20Estadual%20de%20Tabo%C3%A3o%20da%20Serra!5e0!3m2!1spt-BR!2sbr!4v1713016770567!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <img class="slideshow" width="600" height="400"/>
                 
+        </div>
+        <div class="footer">
+            <img class="img" src="./assets/logo-cps-branca.png" alt="">
+            <p class="footer">Praça Miguel Ortega, 135 - Parque Assunção, Taboão da Serra - SP, 06754-160 | Tel.: (11) 4701-1856
+                Copyright © 2021 - Etec de Taboão da Serra</p>
         </div>
     </div>
 

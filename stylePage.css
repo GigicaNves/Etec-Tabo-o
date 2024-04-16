@@ -3,6 +3,11 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    background-image: url("./assets/background-escuro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 div.container {
@@ -48,11 +53,27 @@ p.txt {
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    color: black;
+    color: white;
     font-size: 37px;
     text-align: center;
     margin: 0px;
     margin-top: 5%;
+    background-color: #B20000;
+    width: 100%;
+    padding: 2px;
+}
+
+p.txt-etec {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    font-size: 37px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 5%;
+    width: 100%;
 }
 
 p.paragrafo {
@@ -60,7 +81,7 @@ p.paragrafo {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    color: black;
+    color: white;
     font-size: 20px;
     text-align: justify;
     margin: 0px;
@@ -73,9 +94,104 @@ p.paragrafo {
     font-weight: 500;
     font-style: normal;
     color: white;
-    background-color: #B20000;
-    width: 100%;
     font-size: 45px;
     margin-top: 10px;
     text-align: center;
+}
+
+button.btn-descobrir {
+    width: 180px;
+    height: 50px;
+    background-color: transparent;
+    border: solid 1px white;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    margin-top: 30px;
+}
+
+button.btn-descobrir:hover {
+    background-color: #B20000;
+}
+
+div.cards {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+div.card {
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img.card-img {
+    width: 50%;
+}
+
+h1.card-txt {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+p.card-p {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+div.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background-color: #B20000;
+}
+
+img.img {
+    width: 8%;
+    padding: 10px;
+}
+
+p.footer {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+iframe {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+img.slideshow {
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
